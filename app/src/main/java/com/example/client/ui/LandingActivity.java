@@ -35,4 +35,4 @@ public class LandingActivity extends AppCompatActivity {
 
 
     }
-}gnnnn
+}
