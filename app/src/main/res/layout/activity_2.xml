@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0CCCC"
+    android:padding="16dp">
+
+    <!-- Song title -->
+    <TextView
+        android:id="@+id/songTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buông Đôi Tay Nhau Ra"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Artist name -->
+    <TextView
+        android:id="@+id/artistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sơn Tùng M-TP"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/songTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- Lyrics -->
+    <TextView
+        android:id="@+id/lyrics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Em lặng im..."
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_below="@id/artistName"
+        android:layout_marginTop="20dp"
+        android:padding="16dp" />
+
+    <!-- Seek bar -->
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lyrics"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Control buttons layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:padding="8dp">
+
+        <!-- Shuffle button -->
+        <Button
+            android:id="@+id/shuffleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔀"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp" />
+
+        <!-- Previous button -->
+        <Button
+            android:id="@+id/prevButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⏮️"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp" />
+
+        <!-- Play/Pause button -->
+        <Button
+            android:id="@+id/playPauseButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="▶️"
+            android:textSize="32sp"
+            android:textColor="#FFFFFF"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="16dp" />
+
+        <!-- Next button -->
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⏭️"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp" />
+
+        <!-- Repeat button -->
+        <Button
+            android:id="@+id/repeatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔁"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -18,12 +18,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Client"
         tools:targetApi="31">
-
-
         <activity
-            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:name=".ui.music.Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".ui.music.Activity1"
+            android:exported="false" />
+        <activity
+            android:name=".ui.music.MusicPlayerActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.LandingActivity"
-            android:exported="true">
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,6 +40,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
         <service
             android:name=".service_notification.MusicService"
             android:exported="false" />
