@@ -45,19 +45,19 @@ public class CollectionAdapter extends RecyclerView.Adapter<CollectionAdapter.Co
     }
 
     class CollectionViewHolder extends RecyclerView.ViewHolder {
-        private final TextView textView;
+//        private final TextView textView;
         private final ImageView imageView;
         private final LinearLayout layoutItem;
 
         public CollectionViewHolder(@NonNull View itemView) {
             super(itemView);
-            textView = itemView.findViewById(R.id.textName);
+//            textView = itemView.findViewById(R.id.textName);
             imageView = itemView.findViewById(R.id.image);
             layoutItem = itemView.findViewById(R.id.layoutItem);
         }
 
         public void bind(Collection collection) {
-            textView.setText(collection.getDescription());
+//            textView.setText(collection.getDescription());
 
             Picasso.get()
                     .load(collection.getImage())

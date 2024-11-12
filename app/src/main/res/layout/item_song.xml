@@ -9,4 +9,51 @@
     android:padding="8dp"
     android:background="?android:attr/selectableItemBackground">
 
+    <!-- Image for the song cover -->
+    <ImageView
+        android:id="@+id/songCover"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_launcher_background"
+    android:contentDescription="Song Cover" />
+
+    <!-- Vertical layout for song title and artist name -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Song Title -->
+        <TextView
+            android:id="@+id/songTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Song Title"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <!-- Artist Name -->
+        <TextView
+            android:id="@+id/songArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artist Name"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <!-- Play button (optional) -->
+    <ImageView
+        android:id="@+id/playButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_play_arrow"
+    android:contentDescription="Play Button"/>
+
 </LinearLayout>
