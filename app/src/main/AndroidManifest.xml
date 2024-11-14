@@ -18,12 +18,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Client"
         tools:targetApi="31">
-
-
         <activity
-            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:name=".ui.auth.forgotterpass.resetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.forgotterpass.fogotterActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.LandingActivity"
-            android:exported="true">
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.register.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.Activity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,6 +46,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
         <service
             android:name=".service_notification.MusicService"
             android:exported="false" />
