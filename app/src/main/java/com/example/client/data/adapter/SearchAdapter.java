@@ -12,7 +12,7 @@ import java.util.List;
 
 public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.SearchViewHolder> {
 
-    private final List<String> searchResults;
+    private List<String> searchResults;
 
     public SearchAdapter(List<String> searchResults) {
         this.searchResults = searchResults;
@@ -33,6 +33,11 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.SearchView
     @Override
     public int getItemCount() {
         return searchResults.size();
+    }
+
+    public void updateData(List<String> newResults) {
+        searchResults = newResults;
+        notifyDataSetChanged();
     }
 
     static class SearchViewHolder extends RecyclerView.ViewHolder {
