@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="500px"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#000000"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sontung"/>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="148dp"
+            android:layout_height="46dp"
+            android:layout_alignBottom="@id/image_view"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="1dp"
+            android:gravity="left"
+            android:padding="4dp"
+            android:text="Tuyển tập của
+            Sơn Tùng M-TP"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/image_view"
+            android:background="#FFF9B5"/>
+
+        <TextView
+            android:id="@+id/artist_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_view"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="10px"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="16dp"
+            android:text="Phương Ly, Lynk Lee và RHYDER"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
