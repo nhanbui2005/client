@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Trạng thái nhấn (pressed) -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#3F51B5" /> <!-- Màu khi nhấn -->
+            <corners android:radius="500dp" /> <!-- Bo góc -->
+        </shape>
+    </item>
+
+    <!-- Trạng thái bình thường -->
+    <item>
+        <shape>
+            <solid android:color="#505050" /> <!-- Màu bình thường -->
+            <corners android:radius="500dp" />
+        </shape>
+    </item>
+</selector>
